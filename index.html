@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Protección Infantil: Combatir el Abuso Infantil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Portada -->
+  <header class="portada">
+    <div class="portada-contenido">
+      <h1>Protección Infantil</h1>
+      <p>Información confiable sobre abuso infantil, prevención, leyes, estadísticas y recursos de ayuda.</p>
+      <a href="#leyes" class="boton">Explorar</a>
+    </div>
+  </header>
+
+  <!-- Menú de Navegación -->
+  <nav class="menu">
+    <a href="#leyes"   class="boton-menu">Leyes</a>
+    <a href="#paises" class="boton-menu">Países</a>
+    <a href="#mexico" class="boton-menu">México</a>
+    <a href="#chiapas"class="boton-menu">Chiapas</a>
+    <a href="#fundaciones" class="boton-menu">Ayuda</a>
+    <a href="#graficos"    class="boton-menu">Gráficos</a>
+    <a href="#prevencion"  class="boton-menu">Prevención</a>
+    <a href="#tipos_abuso"class="boton-menu">Tipos</a>
+    <a href="#consejos"    class="boton-menu">Consejos</a>
+  </nav>
+
+  <main>
+    <!-- Leyes -->
+    <section id="leyes" class="aparecer">
+      <h2>Leyes sobre el Abuso Infantil en México</h2>
+      <p>En México, el abuso infantil se considera un delito grave y está regulado por un marco legal robusto. La Ley General de los Derechos de Niñas, Niños y Adolescentes garantiza la protección integral de menores contra cualquier forma de violencia, estableciendo obligaciones para autoridades y sociedad. El Código Penal Federal tipifica los distintos tipos de abuso —físico, emocional, sexual— y sanciona con penas de 5 a 20 años de prisión, según la gravedad del acto.</p>
+      <p>La Ley para la Protección de Niñas, Niños y Adolescentes define procedimientos de atención, denuncia y reparación integral, y obliga a las instituciones públicas y ONG a implementar protocolos de detección y apoyo psicológico.</p>
+      <p><strong>Fuente:</strong> CNDH, 2024.</p>
+    </section>
+
+    <!-- Países -->
+    <section id="paises" class="aparecer">
+      <h2>Países con Mayor Índice de Abuso Infantil</h2>
+      <p>Según UNICEF (2024), las tasas por cada 100 000 niños en 2023 son:</p>
+      <ul>
+        <li>India: 25</li>
+        <li>Estados Unidos: 20</li>
+        <li>México: 15</li>
+        <li>Brasil: 10</li>
+        <li>Sudáfrica: 5</li>
+      </ul>
+      <p>Estas cifras suelen estar subestimadas debido al subregistro. El abuso infantil atraviesa todas las clases sociales y economías.</p>
+    </section>
+
+    <!-- México -->
+    <section id="mexico" class="aparecer">
+      <h2>La Situación del Abuso Infantil en México</h2>
+      <p>La Secretaría de Gobernación (SEGOB, 2023) reporta más de 50 000 casos anuales de abuso infantil en México. Aproximadamente el 60 % ocurre en zonas urbanas y el 40 % en rurales, donde el acceso a servicios de apoyo es limitado. El abuso físico es el más frecuente, seguido del emocional y la negligencia.</p>
+      <p>Programas gubernamentales y campañas de ONG buscan prevenir y atender, pero aún se requiere mayor capacitación y recursos.</p>
+    </section>
+
+    <!-- Chiapas -->
+    <section id="chiapas" class="aparecer">
+      <h2>Abuso Infantil en Chiapas</h2>
+      <p>El Observatorio de Niñez y Adolescencia en Chiapas (2023) indica que el 35 % de los casos nacionales proviene de esta entidad. Factores como pobreza extrema, aislamiento geográfico y violencia intrafamiliar aumentan la vulnerabilidad. Las campañas de sensibilización y protocolos comunitarios están en marcha, pero la cobertura aún es insuficiente.</p>
+    </section>
+
+    <!-- Fundaciones y Ayuda -->
+    <section id="fundaciones" class="aparecer">
+      <h2>Fundaciones y Líneas de Ayuda</h2>
+      <ul>
+        <li><strong>Línea Nacional contra el Abuso Infantil:</strong> 800 911 25 11 (24/7)</li>
+        <li><strong>Fundación ANAR:</strong> Asistencia y asesoría para víctimas.</li>
+        <li><strong>REDIM:</strong> Educación en derechos infantiles.</li>
+      </ul>
+    </section>
+
+    <!-- Gráficos -->
+    <section id="graficos" class="aparecer">
+      <h2>Gráficos y Estadísticas</h2>
+
+      <canvas id="graficoAbuso"></canvas>
+      <p class="descripcion-grafica">
+        <strong>Índice por país (2023)</strong> — UNICEF 2024. India lidera (25), EE.UU. sigue (20) y México (15). Muestra que el abuso infantil no es exclusivo de economías en desarrollo.
+      </p>
+
+      <canvas id="graficoTiposAbuso"></canvas>
+      <p class="descripcion-grafica">
+        <strong>Distribución por tipo (2023)</strong> — SEGOB 2023. Abuso sexual: 40 %, físico: 30 %, emocional: 20 %, negligencia: 10 %. Destaca la urgencia de protocolos de detección.
+      </p>
+    </section>
+
+    <!-- Prevención -->
+    <section id="prevencion" class="aparecer">
+      <h2>Prevención y Educación</h2>
+      <ul>
+        <li>Educar en derechos infantiles desde la escuela.</li>
+        <li>Capacitar a docentes y personal de salud en detección temprana.</li>
+        <li>Campañas comunitarias de sensibilización y denuncia.</li>
+      </ul>
+    </section>
+
+    <!-- Tipos de Abuso -->
+    <section id="tipos_abuso" class="aparecer">
+      <h2>Tipos de Abuso Infantil</h2>
+      <ul>
+        <li><strong>Físico:</strong> Golpes y lesiones.</li>
+        <li><strong>Emocional:</strong> Humillación y amenazas.</li>
+        <li><strong>Sexual:</strong> Explotación o contacto inapropiado.</li>
+        <li><strong>Negligencia:</strong> Omisión de cuidado básico.</li>
+      </ul>
+    </section>
+
+    <!-- Consejos -->
+    <section id="consejos" class="aparecer">
+      <h2>Consejos para Actuar</h2>
+      <ul>
+        <li>Escuchar sin juzgar y brindar contención.</li>
+        <li>Preservar evidencia (fotos, registros médicos).</li>
+        <li>Denunciar al 800 911 25 11.</li>
+        <li>Buscar apoyo psicológico para la víctima y la familia.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025. Datos: UNICEF, SEGOB, CNDH, Observatorio Chiapas.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
