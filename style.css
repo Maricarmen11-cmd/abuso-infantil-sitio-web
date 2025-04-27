@@ -1,0 +1,124 @@
+:root {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Portada */
+.portada {
+  height: 100vh;
+  background: #005f73;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1em;
+}
+.portada h1 {
+  font-size: 3.5rem;
+  margin: 0.2em 0;
+}
+.portada p {
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+}
+.boton {
+  background: #ee9b00;
+  color: white;
+  padding: 0.8em 1.5em;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.boton:hover {
+  background: #ca6702;
+}
+
+/* Menú */
+.menu {
+  background: white;
+  padding: 0.5em;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.boton-menu {
+  background: #007bff;
+  color: white;
+  padding: 0.6em 1em;
+  margin: 0.3em;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+.boton-menu:hover {
+  background: #0056b3;
+}
+
+/* Secciones (ya no las ocultamos) */
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+section {
+  margin-bottom: 2em;
+  /* eliminado opacity/transform */
+}
+h2 {
+  font-size: 2rem;
+  color: #005f73;
+  margin-bottom: 0.5em;
+}
+p, ul {
+  margin-bottom: 1em;
+}
+ul { padding-left: 1.5em; }
+ul li { list-style: disc; }
+
+/* Gráficos */
+canvas {
+  display: block;
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+/* Descripciones */
+.descripcion-grafica {
+  max-width: 900px;
+  margin: 0.5em auto 2em;
+  background: #fff;
+  padding: 1em;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+/* Pie */
+.footer {
+  background: #003d4d;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  :root { font-size: 16px; }
+  .portada h1 { font-size: 2.5rem; }
+  .boton-menu { display: block; width: 80%; margin: 0.5em auto; }
+}
